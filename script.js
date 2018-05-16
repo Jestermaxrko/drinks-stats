@@ -67,7 +67,7 @@ function addNewPerson(person){
 	single_person.appendChild(buttons);
 
 	
-	var drinks = ["beer", "vodka", "wine"];	
+	var drinks = ["beer", "vodka", "wine", "hapka"];	
 	var stats = document.createElement("div");
 	stats.className = "stats";
 
@@ -161,12 +161,8 @@ function updateInfo(){
 	}else{
 		document.getElementById("clear").style.display = "none";
 	}
-
 	document.getElementById("p-count").innerHTML = "Persons (" + all_persons.length + ")";
-
 	localStorage.setItem('cur_party_info', JSON.stringify(all_persons));
-
-
 
 };
 
